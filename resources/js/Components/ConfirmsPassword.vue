@@ -84,16 +84,17 @@ const closeModal = () => {
                     placeholder="Password"
                     autocomplete="current-password"
                     @keyup.enter="confirmPassword"
-                    :class="{ 'is-invalid': form.error }" />
+                    :class="{ 'is-invalid': form.error }"
+                />
 
                 <InputError :message="form.error" class="mt-2" />
             </div>
 
             <div class="text-end">
                 <BButton variant="danger" @click="closeModal">Cancel</BButton>
-                <BButton variant="primary" class="ms-1" :class="{ 'opacity-25': form.processing }" 
-                :disabled="form.processing" @click="confirmPassword">{{ button }}
-                </BButton>
+                <BButton variant="success" class="ms-1" :class="{ 'opacity-25': form.processing }"
+                :disabled="form.processing"
+                @click="confirmPassword">{{ button }}</BButton>
             </div>
 
         </BModal>

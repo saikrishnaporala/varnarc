@@ -39,7 +39,7 @@ export default {
 
         <BRow class="justify-content-center">
           <BCol md="8" lg="6" xl="5">
-            <BCard no-body class="mt-4">
+            <BCard no-body class="mt-4 card-bg-fill">
               <BCardBody class="p-4 text-center">
                 <div class="avatar-lg mx-auto mt-2">
                   <div class="avatar-title bg-light text-success display-3 rounded-circle">

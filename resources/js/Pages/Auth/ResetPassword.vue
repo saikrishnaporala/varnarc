@@ -23,6 +23,17 @@ const submit = () => {
 };
 </script>
 
+<script>
+export default {
+    data() {
+        return {
+            togglePassword: false,
+            togglePassword_conf: false,
+        }
+    }
+}
+</script>
+
 <template>
     <Head title="Reset Password" />
 
@@ -74,8 +85,8 @@ const submit = () => {
                                         <div class="mb-3">
                                             <InputLabel for="password-input" value="Password" />
                                             <div class="position-relative auth-pass-inputgroup">
-                                                <input type="password" class="form-control pe-5 password-input" placeholder="Enter password" id="password-input" v-model="form.password" required :class="{ 'is-invalid' : form.errors.password}">
-                                                <BButton variant="link" class="position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i>
+                                                <input :type="togglePassword ? 'text' : 'password'" class="form-control pe-5 password-input" placeholder="Enter password" id="password-input" v-model="form.password" required :class="{ 'is-invalid' : form.errors.password}">
+                                                <BButton variant="link" class="position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon" @click="togglePassword = !togglePassword"><i class="ri-eye-fill align-middle"></i>
                                                 </BButton>
                                                 <InputError :message="form.errors.password" />
                                             </div>
@@ -84,8 +95,8 @@ const submit = () => {
                                         <div class="mb-3">
                                             <InputLabel for="password_confirmation" value="Confirm Password" />
                                             <div class="position-relative auth-pass-inputgroup mb-3">
-                                                <input type="password" class="form-control pe-5 password-input" placeholder="Confirm password" id="confirm-password-input" v-model="form.password_confirmation" required :class="{ 'is-invalid' : form.errors.password_confirmation}">
-                                                <BButton variant="link" class="position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="confirm-password-input"><i class="ri-eye-fill align-middle"></i>
+                                                <input :type="togglePassword_conf ? 'text' : 'password'" class="form-control pe-5 password-input" placeholder="Confirm password" id="confirm-password-input" v-model="form.password_confirmation" required :class="{ 'is-invalid' : form.errors.password_confirmation}">
+                                                <BButton variant="link" class="position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="confirm-password-input" @click="togglePassword_conf = !togglePassword_conf"><i class="ri-eye-fill align-middle"></i>
                                                 </BButton>
                                                 <InputError :message="form.errors.password_confirmation" />
                                             </div>

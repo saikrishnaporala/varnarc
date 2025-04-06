@@ -312,39 +312,41 @@ export default {
           <!-- LOGO -->
           <div class="navbar-brand-box horizontal-logo">
             <Link href="/" class="logo logo-dark">
-              <span class="logo-sm">
-                <img src="@assets/images/logo-sm.png" alt="" height="22" />
-              </span>
-              <span class="logo-lg">
-                <img src="@assets/images/logo-dark.png" alt="" height="17" />
-              </span>
+            <span class="logo-sm">
+              <img src="@assets/images/logo-sm.png" alt="" height="22" />
+            </span>
+            <span class="logo-lg">
+              <img src="@assets/images/logo-dark.png" alt="" height="17" />
+            </span>
             </Link>
 
             <Link href="/" class="logo logo-light">
-              <span class="logo-sm">
-                <img src="@assets/images/logo-sm.png" alt="" height="22" />
-              </span>
-              <span class="logo-lg">
-                <img src="@assets/images/logo-light.png" alt="" height="17" />
-              </span>
+            <span class="logo-sm">
+              <img src="@assets/images/logo-sm.png" alt="" height="22" />
+            </span>
+            <span class="logo-lg">
+              <img src="@assets/images/logo-light.png" alt="" height="17" />
+            </span>
             </Link>
           </div>
 
-          <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+          <BButton variant="white" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger  material-shadow-none"
             id="topnav-hamburger-icon">
             <span class="hamburger-icon">
               <span></span>
               <span></span>
               <span></span>
             </span>
-          </button>
+          </BButton>
 
           <!-- App Search-->
           <form class="app-search d-none d-md-block">
             <div class="position-relative">
-              <input type="text" class="form-control" placeholder="Search..." autocomplete="off" id="search-options" value="" />
+              <input type="text" class="form-control" placeholder="Search..." autocomplete="off" id="search-options"
+                value="" />
               <span class="mdi mdi-magnify search-widget-icon"></span>
-              <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none" id="search-close-options"></span>
+              <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                id="search-close-options"></span>
             </div>
             <div class="dropdown-menu dropdown-menu-lg" id="search-dropdown">
               <simplebar data-simplebar style="max-height: 320px">
@@ -355,10 +357,10 @@ export default {
                 </div>
 
                 <div class="dropdown-item bg-transparent text-wrap">
-                  <Link href="/" class="btn btn-soft-secondary btn-sm rounded-pill">how to setup 
-                    <i class="mdi mdi-magnify ms-1"></i></Link>
-                  <Link href="/" class="btn btn-soft-secondary btn-sm rounded-pill">buttons 
-                    <i class="mdi mdi-magnify ms-1"></i></Link>
+                  <Link href="/" class="btn btn-soft-secondary btn-sm rounded-pill">how to setup <i
+                    class="mdi mdi-magnify ms-1"></i></Link>
+                  <Link href="/" class="btn btn-soft-secondary btn-sm rounded-pill">buttons <i
+                    class="mdi mdi-magnify ms-1"></i></Link>
                 </div>
                 <div class="dropdown-header mt-2">
                   <h6 class="text-overflow text-muted mb-1 text-uppercase">
@@ -414,17 +416,16 @@ export default {
 
               <div class="text-center pt-3 pb-1">
                 <Link href="/pages/search-results" class="btn btn-primary btn-sm">View All Results <i
-                    class="ri-arrow-right-line ms-1"></i></Link>
+                  class="ri-arrow-right-line ms-1"></i></Link>
               </div>
             </div>
           </form>
         </div>
 
         <div class="d-flex align-items-center">
-          <BDropdown class="dropdown d-md-none topbar-head-dropdown header-item" variant="ghost-secondary" dropstart
-            :offset="{ alignmentAxis: 55, crossAxis: 15, mainAxis: 0 }"
-            toggle-class="btn-icon btn-topbar rounded-circle arrow-none"
-            menu-class="dropdown-menu-lg dropdown-menu-end p-0">
+          <BDropdown class="dropdown d-md-none topbar-head-dropdown header-item " variant="ghost-secondary" dropstart
+            :offset="{ alignmentAxis: 55, crossAxis: 15, mainAxis: 0 }" toggle-class="btn-icon btn-topbar rounded-circle material-shadow-none"
+            no-caret menu-class="dropdown-menu-lg dropdown-menu-end p-0">
             <template #button-content>
               <i class="bx bx-search fs-22"></i>
             </template>
@@ -444,7 +445,7 @@ export default {
 
           <BDropdown class="dropdown" variant="ghost-secondary" dropstart
             :offset="{ alignmentAxis: 55, crossAxis: 15, mainAxis: -50 }"
-            toggle-class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle arrow-none"
+            toggle-class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle material-shadow-none" no-caret
             menu-class="dropdown-menu-end">
             <template #button-content> <img id="header-lang-img" src="@assets/images/flags/us.svg" alt="Header Language"
                 height="20" class="rounded">
@@ -459,7 +460,7 @@ export default {
 
           <BDropdown class="dropdown" variant="ghost-secondary" dropstart
             :offset="{ alignmentAxis: 57, crossAxis: 0, mainAxis: -42 }"
-            toggle-class="btn-icon btn-topbar rounded-circle mode-layout ms-1 arrow-none"
+            toggle-class="btn-icon btn-topbar rounded-circle mode-layout ms-1 material-shadow-none" no-caret
             menu-class="p-0 dropdown-menu-end">
             <template #button-content>
               <i class="bx bx-category-alt fs-22"></i>
@@ -524,7 +525,7 @@ export default {
           </BDropdown>
 
           <BDropdown variant="ghost-secondary" dropstart :offset="{ alignmentAxis: 57, crossAxis: 0, mainAxis: -42 }"
-            class="ms-1 dropdown" toggle-class="btn-icon btn-topbar rounded-circle mode-layout arrow-none"
+            class="ms-1 dropdown" toggle-class="btn-icon btn-topbar rounded-circle mode-layout material-shadow-none" no-caret
             menu-class="dropdown-menu-xl dropdown-menu-end p-0" text="Manual close (auto-close=false)"
             auto-close="outside">
             <template #button-content>
@@ -573,10 +574,10 @@ export default {
                       <h5 class="m-0 fw-normal">$<span class="cart-item-price">{{ item.itemPrice }}</span></h5>
                     </div>
                     <div class="ps-2">
-                      <button type="button" class="btn btn-ghost-secondary btn-sm btn-icon remove-item-btn"
+                      <BButton variant="ghost-secondary" size="sm" class="btn-icon remove-item-btn"
                         @click="removeItem(item)">
                         <i class="ri-close-fill fs-16"></i>
-                      </button>
+                      </BButton>
                     </div>
                   </div>
                 </div>
@@ -592,29 +593,29 @@ export default {
               </div>
 
               <Link href="/ecommerce/checkout" class="btn btn-success text-center w-100">
-                Checkout
+              Checkout
               </Link>
             </div>
           </BDropdown>
 
           <div class="ms-1 header-item d-none d-sm-flex">
-            <BButton type="button" variant="ghost-secondary" class="btn-icon btn-topbar rounded-circle"
+            <BButton type="button" variant="ghost-secondary" class="btn-icon btn-topbar rounded-circle material-shadow-none"
               data-toggle="fullscreen" @click="initFullScreen">
               <i class="bx bx-fullscreen fs-22"></i>
             </BButton>
           </div>
 
           <div class="ms-1 header-item d-none d-sm-flex">
-            <BButton type="button" variant="ghost-secondary" class="btn-icon btn-topbar rounded-circle light-dark-mode"
+            <BButton type="button" variant="ghost-secondary" class="btn-icon btn-topbar rounded-circle light-dark-mode material-shadow-none"
               @click="toggleDarkMode">
               <i class="bx bx-moon fs-22"></i>
             </BButton>
           </div>
 
           <BDropdown variant="ghost-dark" dropstart class="ms-1 dropdown"
-            :offset="{ alignmentAxis: 57, crossAxis: 0, mainAxis: -42 }"
-            toggle-class="btn-icon btn-topbar rounded-circle arrow-none" id="page-header-notifications-dropdown"
-            menu-class="dropdown-menu-lg dropdown-menu-end p-0" auto-close="outside">
+            :offset="{ alignmentAxis: 57, crossAxis: 0, mainAxis: -42 }" toggle-class="btn-icon btn-topbar rounded-circle material-shadow-none"
+            no-caret id="page-header-notifications-dropdown" menu-class="dropdown-menu-lg dropdown-menu-end p-0"
+            auto-close="outside">
             <template #button-content>
               <i class='bx bx-bell fs-22'></i>
               <span class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger"><span
@@ -632,7 +633,7 @@ export default {
                     </h6>
                   </BCol>
                   <BCol cols="auto" class="dropdown-tabs">
-                    <BBadge variant="light-subtle" class="bg-light-subtle text-body fs-13"> 4 New</BBadge>
+                    <BBadge variant="light" class="bg-light text-body fs-13"> 4 New</BBadge>
                   </BCol>
                 </BRow>
               </div>
@@ -671,7 +672,9 @@ export default {
                         alt="user-pic" />
                       <div class="flex-grow-1">
                         <BLink href="#!" class="stretched-link">
-                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6>
+                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">
+                            Angela Bernier
+                          </h6>
                         </BLink>
                         <div class="fs-13 text-muted">
                           <p class="mb-1">
@@ -702,7 +705,8 @@ export default {
                           </h6>
                         </BLink>
                         <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                          <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                          <span><i class="mdi mdi-clock-outline"></i> 2 hrs
+                            ago</span>
                         </p>
                       </div>
                       <div class="px-2 fs-15">
@@ -717,7 +721,9 @@ export default {
                         alt="user-pic" />
                       <div class="flex-grow-1">
                         <BLink href="#!" class="stretched-link">
-                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6>
+                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">
+                            Maureen Gibson
+                          </h6>
                         </BLink>
                         <div class="fs-13 text-muted">
                           <p class="mb-1">
@@ -725,7 +731,8 @@ export default {
                           </p>
                         </div>
                         <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                          <span><i class="mdi mdi-clock-outline"></i> 4 hrs ago</span>
+                          <span><i class="mdi mdi-clock-outline"></i> 4 hrs
+                            ago</span>
                         </p>
                       </div>
                       <div class="px-2 fs-15">
@@ -748,11 +755,12 @@ export default {
                 <simplebar data-simplebar style="max-height: 300px" class="pe-2">
                   <div class="text-reset notification-item d-block dropdown-item">
                     <div class="d-flex">
-                      <img src="@assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs"
-                        alt="user-pic" />
+                      <img src="@assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic" />
                       <div class="flex-grow-1">
                         <BLink href="#!" class="stretched-link">
-                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">James Lemire</h6>
+                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">
+                            James Lemire
+                          </h6>
                         </BLink>
                         <div class="fs-13 text-muted">
                           <p class="mb-1">
@@ -771,11 +779,12 @@ export default {
 
                   <div class="text-reset notification-item d-block dropdown-item">
                     <div class="d-flex">
-                      <img src="@assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs"
-                        alt="user-pic" />
+                      <img src="@assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic" />
                       <div class="flex-grow-1">
                         <BLink href="#!" class="stretched-link">
-                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">Angela Bernier</h6>
+                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">
+                            Angela Bernier
+                          </h6>
                         </BLink>
                         <div class="fs-13 text-muted">
                           <p class="mb-1">
@@ -784,7 +793,8 @@ export default {
                           </p>
                         </div>
                         <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                          <span><i class="mdi mdi-clock-outline"></i> 2 hrs ago</span>
+                          <span><i class="mdi mdi-clock-outline"></i> 2 hrs
+                            ago</span>
                         </p>
                       </div>
                       <div class="px-2 fs-15">
@@ -795,11 +805,12 @@ export default {
 
                   <div class="text-reset notification-item d-block dropdown-item">
                     <div class="d-flex">
-                      <img src="@assets/images/users/avatar-6.jpg" class="me-3 rounded-circle avatar-xs"
-                        alt="user-pic" />
+                      <img src="@assets/images/users/avatar-6.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic" />
                       <div class="flex-grow-1">
                         <BLink href="#!" class="stretched-link">
-                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">Kenneth Brown</h6>
+                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">
+                            Kenneth Brown
+                          </h6>
                         </BLink>
                         <div class="fs-13 text-muted">
                           <p class="mb-1">
@@ -808,7 +819,8 @@ export default {
                           </p>
                         </div>
                         <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                          <span><i class="mdi mdi-clock-outline"></i> 10 hrs ago</span>
+                          <span><i class="mdi mdi-clock-outline"></i> 10 hrs
+                            ago</span>
                         </p>
                       </div>
                       <div class="px-2 fs-15">
@@ -819,11 +831,12 @@ export default {
 
                   <div class="text-reset notification-item d-block dropdown-item">
                     <div class="d-flex">
-                      <img src="@assets/images/users/avatar-8.jpg" class="me-3 rounded-circle avatar-xs"
-                        alt="user-pic" />
+                      <img src="@assets/images/users/avatar-8.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic" />
                       <div class="flex-grow-1">
                         <BLink href="#!" class="stretched-link">
-                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">Maureen Gibson</h6>
+                          <h6 class="mt-0 mb-1 fs-13 fw-semibold">
+                            Maureen Gibson
+                          </h6>
                         </BLink>
                         <div class="fs-13 text-muted">
                           <p class="mb-1">
@@ -831,7 +844,8 @@ export default {
                           </p>
                         </div>
                         <p class="mb-0 fs-11 fw-medium text-uppercase text-muted">
-                          <span><i class="mdi mdi-clock-outline"></i> 3 days ago</span>
+                          <span><i class="mdi mdi-clock-outline"></i> 3 days
+                            ago</span>
                         </p>
                       </div>
                       <div class="px-2 fs-15">
@@ -864,50 +878,60 @@ export default {
             </BTabs>
           </BDropdown>
 
-          <BDropdown variant="link" class="ms-sm-3 header-item topbar-user" toggle-class="rounded-circle arrow-none" menu-class="dropdown-menu-end" :offset="{ alignmentAxis: -14, crossAxis: 0, mainAxis: 0 }">
+          <BDropdown variant="link" class="ms-sm-3 header-item topbar-user" toggle-class="rounded-circle material-shadow-none" no-caret
+            menu-class="dropdown-menu-end" :offset="{ alignmentAxis: -14, crossAxis: 0, mainAxis: 0 }">
             <template #button-content>
               <span class="d-flex align-items-center">
-                <img v-if="$page.props.jetstream.managesProfilePhotos" class="rounded-circle header-profile-user" :src="$page.props.auth.user.profile_photo_url" :alt="$page.props.auth.user.name">
+                <img v-if="$page.props.jetstream.managesProfilePhotos" class="rounded-circle header-profile-user"
+                  :src="$page.props.auth.user.profile_photo_url" :alt="$page.props.auth.user.name">
                 <span class="text-start ms-xl-2">
-                  <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">{{ $page.props.auth.user.name }}</span>
+                  <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">{{ $page.props.auth.user.name
+                  }}</span>
                   <span class="d-none d-xl-block ms-1 fs-12 user-name-sub-text">Founder</span>
                 </span>
               </span>
             </template>
             <h6 class="dropdown-header">Welcome {{ $page.props.auth.user.name }}!</h6>
-            <Link class="dropdown-item" :href="route('profile.show')"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
+            <Link class="dropdown-item" :href="route('profile.show')"><i
+              class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
             <span class="align-middle">Profile</span>
             </Link>
-            <Link class="dropdown-item" v-if="$page.props.jetstream.hasApiFeatures" :href="route('api-tokens.index')"><i class="mdi mdi-key-variant text-muted fs-16 align-middle me-1"></i>
+            <Link class="dropdown-item" v-if="$page.props.jetstream.hasApiFeatures" :href="route('api-tokens.index')"><i
+              class="mdi mdi-key-variant text-muted fs-16 align-middle me-1"></i>
             <span class="align-middle"> API Tokens</span>
             </Link>
             <div class="dropdown-divider"></div>
-            <Link class="dropdown-item" href="#">
+            <Link class="dropdown-item" href="/chat">
             <i class=" mdi mdi-message-text-outline text-muted fs-16 align-middle me-1"></i>
             <span class="align-middle"> Messages</span>
             </Link>
-            <Link class="dropdown-item" href="#">
+            <Link class="dropdown-item" href="/apps/tasks-kanban">
             <i class="mdi mdi-calendar-check-outline text-muted fs-16 align-middle me-1"></i>
             <span class="align-middle"> Taskboard</span>
             </Link>
-            <Link class="dropdown-item" href="#"><i class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i>
+            <Link class="dropdown-item" href="/pages/faqs"><i
+              class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i>
             <span class="align-middle"> Help</span>
             </Link>
             <div class="dropdown-divider"></div>
-            <Link class="dropdown-item" href="#"><i class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i>
+            <Link class="dropdown-item" href="/pages/profile"><i
+              class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i>
             <span class="align-middle"> Balance : <b>$5971.67</b></span>
             </Link>
-            <Link class="dropdown-item" href="#">
-            <BBadge variant="success-subtle" class="bg-success-subtle text-success mt-1 float-end">New</BBadge><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i>
+            <Link class="dropdown-item" href="/pages/profile-setting">
+            <BBadge variant="success-subtle" class="bg-success-subtle text-success mt-1 float-end">New</BBadge><i
+              class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i>
             <span class="align-middle"> Settings</span>
             </Link>
-            <Link class="dropdown-item" href="/auth/lockscreen-basic"><i class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i>
+            <Link class="dropdown-item" href="/auth/lockscreen-basic"><i
+              class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i>
             <span class="align-middle"> Lock screen</span>
             </Link>
 
             <!-- Authentication -->
             <form method="POST" @submit.prevent="logout" class="dropdown-item">
-              <BButton variant="none" type="submit" class="btn p-0"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> Logout</BButton>
+              <BButton variant="none" type="submit" class="btn p-0"><i
+                  class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> Logout</BButton>
             </form>
           </BDropdown>
         </div>

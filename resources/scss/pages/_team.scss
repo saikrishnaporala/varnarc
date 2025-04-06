@@ -18,12 +18,10 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to top, darken($primary, 25%), $primary);
+        background: linear-gradient(to top, var(--#{$prefix}primary-text-emphasis), var(--#{$prefix}primary));
         opacity: 0.6;
     }
 }
-
-
 
 .team-list {
     &.grid-view-filter {
@@ -146,7 +144,7 @@
             }
 
             .btn-star {
-                color: $primary;
+                color: var(--#{$prefix}primary);
             }
         }
 
@@ -191,7 +189,7 @@
 .list-grid-nav {
     .nav-link {
         &.active {
-            background-color: $info;
+            background-color: var(--#{$prefix}info);
             color: $white;
         }
     }
@@ -205,5 +203,11 @@
     }
     .btn-star {
         color: $white;
+    }
+
+    .dropdown {
+        >a {
+            color: $white;
+        }
     }
 }

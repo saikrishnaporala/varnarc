@@ -49,7 +49,7 @@ export default {
 
         <BRow class="justify-content-center">
           <BCol md="8" lg="6" xl="5">
-            <BCard no-body class="mt-4">
+            <BCard no-body class="mt-4 card-bg-fill">
               <BCardBody class="p-4 text-center">
                 <lottie colors="primary:#405189,secondary:#08a88a" :options="defaultOptions" :height="180"
                   :width="180" />
@@ -70,7 +70,7 @@ export default {
       </BContainer>
     </div>
 
-    <footer class="footer">
+    <footer class="footer galaxy-border-none">
       <BContainer>
         <BRow>
           <BCol lg="12">

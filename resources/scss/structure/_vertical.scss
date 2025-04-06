@@ -43,8 +43,8 @@
             align-items: center;
             padding: $vertical-menu-item-padding-y $vertical-menu-item-padding-x;
             color: var(--#{$prefix}vertical-menu-item-color);
-            font-size: $vertical-menu-item-font-size;
-            font-family: $vertical-menu-item-font-family;
+            font-size: var(--#{$prefix}vertical-menu-item-font-size);
+            font-family: var(--#{$prefix}vertical-menu-item-font-family);
 
             &.active {
                 color: var(--#{$prefix}vertical-menu-item-active-color);
@@ -132,8 +132,8 @@
                 color: var(--#{$prefix}vertical-menu-sub-item-color);
                 white-space: none;
                 position: relative;
-                font-size: $vertical-menu-sub-item-font-size;
-                font-family: $vertical-menu-sub-item-font-family;
+                font-size: var(--#{$prefix}vertical-menu-sub-item-font-size);
+                font-family: var(--#{$prefix}vertical-menu-sub-item-font-family);
 
                 &:before {
                     content: '';
@@ -289,6 +289,10 @@
     display: none;
 }
 
+.sidebar-user { 
+    display: none;
+}
+
 :is([data-layout="vertical"], [data-layout="semibox"]) {
     .app-menu {
         .row {
@@ -305,6 +309,53 @@
             padding: 10px 0 20px 0;
         }
 
+    }
+    
+    &[data-sidebar-user-show] { 
+        .app-menu {
+            .sidebar-user {
+                display: block;
+                background-color: var(--#{$prefix}sidebar-user-bg);
+        
+                .sidebar-user-name-text {
+                    color: var(--#{$prefix}sidebar-user-name-text);
+                }
+        
+                .sidebar-user-name-sub-text {
+                    color: var(--#{$prefix}sidebar-user-name-sub-text);
+                }
+        
+                .header-profile-user {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+        #page-topbar {
+            .topbar-user {
+                display: none;
+            }
+        }
+
+        &:is([data-sidebar-size="sm"], [data-sidebar-size="sm-hover"]) {
+            
+            .app-menu {
+                .header-profile-user {
+                    height: 40px;
+                    width: 40px;
+                }
+    
+                .sidebar-user {
+                    .btn {
+                        padding: 9px;
+                    }
+    
+                    .text-start {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 
     .navbar-menu {
@@ -615,7 +666,7 @@
                             width: calc(200px + var(--#{$prefix}vertical-menu-width-sm));
                             transition: none;
                             background: var(--#{$prefix}vertical-menu-bg);
-                            
+
                             .icon-dual {
                                 fill: rgba($white, 0.16);
                             }
@@ -647,7 +698,7 @@
                             height: auto !important;
                             padding: 0.5rem 0;
                             border-radius: 0 0 3px 3px;
-                            box-shadow: $vertical-menu-dropdown-box-shadow;
+                            box-shadow: var(--#{$prefix}vertical-menu-dropdown-box-shadow);
                         }
                     }
                 }
@@ -934,7 +985,6 @@
     }
 }
 
-//gradient sidebar
 @if $sidebar-gradient-mode { 
     
     .bg-vertical-gradient {
@@ -955,44 +1005,47 @@
     }
 }
 
+
 @if $sidebar-img {
-//sidebar-images
-.sidebar-background {
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    display: block;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: 50%;
-    opacity: .07;
-}
 
-[data-sidebar-image="img-1"] {
+    //sidebar-images
     .sidebar-background {
-        background-image: url('../../../images/sidebar/img-1.jpg');
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        display: block;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: 50%;
+        opacity: .07;
     }
-}
 
-[data-sidebar-image="img-2"] {
-    .sidebar-background {
-        background-image: url('../../../images/sidebar/img-2.jpg');
+    [data-sidebar-image="img-1"] {
+        .sidebar-background {
+            background-image: url('../images/sidebar/img-1.jpg');
+        }
     }
-}
 
-[data-sidebar-image="img-3"] {
-    .sidebar-background {
-        background-image: url('../../../images/sidebar/img-3.jpg');
+    [data-sidebar-image="img-2"] {
+        .sidebar-background {
+            background-image: url('../images/sidebar/img-2.jpg');
+        }
     }
-}
 
-[data-sidebar-image="img-4"] {
-    .sidebar-background {
-        background-image: url('../../../images/sidebar/img-4.jpg');
+    [data-sidebar-image="img-3"] {
+        .sidebar-background {
+            background-image: url('../images/sidebar/img-3.jpg');
+        }
     }
-}
+
+    [data-sidebar-image="img-4"] {
+        .sidebar-background {
+            background-image: url('../images/sidebar/img-4.jpg');
+        }
+    }
+
 }
 
 [data-layout="semibox"] {
@@ -1005,7 +1058,9 @@
     }
 
     @media (min-width: 768px) {
-        &[data-sidebar-size="sm"], &[data-sidebar-size="sm-hover"] {
+
+        &[data-sidebar-size="sm"],
+        &[data-sidebar-size="sm-hover"] {
             .main-content {
                 margin-left: var(--#{$prefix}vertical-menu-width-sm);
             }
@@ -1113,12 +1168,20 @@
     }
 
     .mx-n4 {
-       margin-left: 0px !important;
+        margin-left: 0px !important;
         margin-right: 0px !important;
 
         &.p-1 {
             padding-left: 0px !important;
             padding-right: 0px !important;
+        }
+    }
+}
+
+@media (min-width: 1440px) { 
+    [data-theme="vintage"]:is([data-layout="vertical"], [data-layout="twocolumn"], [data-layout="horizontal"]) {
+        .page-content {
+            padding: calc(#{$header-height} + #{$grid-gutter-width}) calc(#{$grid-gutter-width} * 5) $footer-height calc(#{$grid-gutter-width} * 5);
         }
     }
 }

@@ -133,6 +133,7 @@
     white-space: nowrap;
     z-index: 12;
     transition: .15s ease all;
+    font-family: $font-family-base !important;
 
     &.apexcharts-active {
         opacity: 1;
@@ -160,10 +161,11 @@
     }
 
     * {
-        font-family: inherit;
+        font-family: inherit !important;
     }
 
     .apexcharts-tooltip-title {
+        font-family: $font-family-base !important;
         padding: 6px;
         font-size: 15px;
         margin-bottom: 4px;

@@ -123,36 +123,34 @@
 }
 
 //accordion Color 
-
-@each $color,
-$value in $theme-colors {
-    .accordion-#{$color} {
+@each $state in map-keys($theme-colors) { 
+    .accordion-#{$state} {
         .accordion-item {
-            border-color: rgba($value, 0.6);
-
+            border-color: rgba(var(--#{$prefix}#{$state}-rgb), 0.6);
+    
             .accordion-button {
                 box-shadow: none;
-
+    
                 &:not(.collapsed) {
-                    color: $value;
-                    background-color: rgba($value, 0.1) !important;
+                    color: var(--#{$prefix}#{$state});
+                    background-color: rgba(var(--#{$prefix}#{$state}-rgb), 0.1) !important;
                 }
-
+    
                 &::after {
-                    color: $value;
+                    color: var(--#{$prefix}#{$state});
                 }
             }
         }
     }
 
-    .accordion-fill-#{$color} {
+    .accordion-fill-#{$state} {
         .accordion-item {
             .accordion-button {
                 box-shadow: none;
-
+    
                 &:not(.collapsed) {
                     color: $white;
-                    background-color: $value !important;
+                    background-color: var(--#{$prefix}#{$state}) !important;
                 }
             }
         }

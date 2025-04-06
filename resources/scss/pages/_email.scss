@@ -58,7 +58,7 @@
         font-weight: $font-weight-medium;
 
         &:hover {
-            color: $primary;
+            color: var(--#{$prefix}primary);
         }
 
         i {
@@ -66,11 +66,11 @@
         }
 
         &.active {
-            color: $success;
+            color: var(--#{$prefix}success);
             font-weight: $font-weight-semibold;
 
             i {
-                color: $success;
+                color: var(--#{$prefix}success);
             }
         }
     }
@@ -89,7 +89,7 @@
         color: var(--#{$prefix}secondary-color);
 
         &:hover {
-            color: $secondary;
+            color: var(--#{$prefix}secondary);
         }
     }
 }
@@ -257,7 +257,7 @@
 
         &.active,
         &.active:hover {
-            box-shadow: inset 3px 0 0 $primary;
+            box-shadow: inset 3px 0 0 var(--#{$prefix}primary);
             background-color: var(--#{$prefix}light);
         }
 

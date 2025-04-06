@@ -38,7 +38,7 @@
 
 .pagination-next,
 .pagination-prev {
-    color: $primary;
+    color: var(--#{$prefix}primary);
     font-weight: $font-weight-medium;
     padding: $pagination-padding-y $pagination-padding-x;
     background-color: $pagination-bg;

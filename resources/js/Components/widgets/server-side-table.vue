@@ -1,10 +1,10 @@
 <template>
-  <b-row class="w-100 h-100 d-flex flex-row justify-content-center align-items-center">
-    <b-col md="10">
+  <BRow class="w-100 h-100 d-flex flex-row justify-content-center align-items-center">
+    <BCol md="10">
       <h3>Client Side</h3>
       <v-client-table :data="tableData" :columns="columns" :options="options"></v-client-table>
-    </b-col>
-  </b-row>
+    </BCol>
+  </BRow>
 </template>
 
 <script>

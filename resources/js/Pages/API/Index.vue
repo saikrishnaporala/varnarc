@@ -1,4 +1,5 @@
 <script setup>
+import { Head } from "@inertiajs/vue3"
 import Layout from "@/Layouts/main.vue";
 import ApiTokenManager from '@/Pages/API/Partials/ApiTokenManager.vue';
 
@@ -10,7 +11,8 @@ defineProps({
 </script>
 
 <template>
-    <Layout title="API Tokens">
+    <Layout>
+        <Head title="API Tokens" />
         <BRow class="justify-content-center">
             <BCol lg="6">
                 <ApiTokenManager :tokens="tokens" :available-permissions="availablePermissions" :default-permissions="defaultPermissions" />

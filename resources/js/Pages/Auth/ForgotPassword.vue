@@ -90,7 +90,7 @@ export default {
                                         </div>
 
                                         <div class="text-center mt-4">
-                                            <b-button variant="success" class="w-100" type="submit" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">Send Reset Link</b-button>
+                                            <BButton variant="success" class="w-100" type="submit" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">Send Reset Link</BButton>
                                         </div>
                                     </form>
                                 </div>

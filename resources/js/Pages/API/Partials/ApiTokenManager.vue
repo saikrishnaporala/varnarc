@@ -94,7 +94,7 @@ const deleteApiToken = () => {
             </template>
 
             <template #actions>
-                <BButton variant="primary w-100" type="submit" :class="{ 'opacity-25': createApiTokenForm.processing }" :disabled="createApiTokenForm.processing">Create</BButton>
+                <BButton variant="success w-100" type="submit" :class="{ 'opacity-25': createApiTokenForm.processing }" :disabled="createApiTokenForm.processing">Create</BButton>
                 <p v-if="createApiTokenForm.recentlySuccessful" class="alert alert-success mt-3">Created.</p>
             </template>
         </FormSection>
@@ -119,7 +119,7 @@ const deleteApiToken = () => {
                                 Last used {{ token.last_used_ago }}
                             </div>
 
-                            <BButton variant="primary" v-if="availablePermissions.length > 0" class="btn-sm me-1" @click="manageApiTokenPermissions(token)">
+                            <BButton variant="info" v-if="availablePermissions.length > 0" class="btn-sm me-1" @click="manageApiTokenPermissions(token)">
                                 Permissions
                             </BButton>
 
@@ -153,7 +153,7 @@ const deleteApiToken = () => {
             </div>
             <div class="text-end">
                 <BButton variant="danger" @click="permissionModal = !permissionModal">Cancel</BButton>
-                <BButton variant="primary" class="ms-1" :class="{ 'opacity-25': updateApiTokenForm.processing }" :disabled="updateApiTokenForm.processing" @click="updateApiToken">Save</BButton>
+                <BButton variant="success" class="ms-1" :class="{ 'opacity-25': updateApiTokenForm.processing }" :disabled="updateApiTokenForm.processing" @click="updateApiToken">Save</BButton>
             </div>
         </BModal>
 
@@ -162,7 +162,7 @@ const deleteApiToken = () => {
             <p class="fs-14">Are you sure you would like to delete this API token?</p>
             <div class="text-end">
                 <BButton variant="danger" class="btn-sm" @click="apiTokenDeleteModal = !apiTokenDeleteModal">Cancel</BButton>
-                <BButton variant="primary" class="ms-1 btn-sm" :class="{ 'opacity-25': deleteApiTokenForm.processing }" :disabled="deleteApiTokenForm.processing" @click="deleteApiToken">Delete</BButton>
+                <BButton variant="success" class="ms-1 btn-sm" :class="{ 'opacity-25': deleteApiTokenForm.processing }" :disabled="deleteApiTokenForm.processing" @click="deleteApiToken">Delete</BButton>
             </div>
         </BModal>
     </div>

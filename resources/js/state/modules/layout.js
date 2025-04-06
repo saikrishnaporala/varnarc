@@ -1,15 +1,17 @@
 const state = {
-  layoutType: 'horizontal',
+  layoutType: 'vertical',
   layoutWidth: 'fluid',
   sidebarSize: 'lg',
-  topbar: 'dark',
+  topbar: 'light',
   mode: 'light',
   position: 'fixed',
   sidebarView: 'default',
-  sidebarColor: 'light',
+  sidebarColor: 'dark',
   sidebarImage: 'none',
   preloader: 'disable',
-  visibility: 'show'
+  visibility: 'show',
+  layoutTheme: 'default',
+  themeColor: 'default'
 };
 
 const mutations = {
@@ -45,6 +47,12 @@ const mutations = {
   },
   CHANGE_VISIBILITY(state, visibility) {
     state.visibility = visibility;
+  },
+  CHANGE_THEMES(state, layoutTheme) {
+    state.layoutTheme = layoutTheme;
+  },
+  CHANGE_THEMES_COLOR(state, themeColor) {
+    state.themeColor = themeColor;
   }
 };
 
@@ -92,11 +100,23 @@ const actions = {
 
   changeVisibility({ commit }, { visibility }) {
     commit('CHANGE_VISIBILITY', visibility);
+  },
+
+  changeBodybg({ commit }, { bodybg }) {
+    commit('CHANGE_BODYBG', bodybg);
+  },
+
+  changeThemes({ commit }, { layoutTheme }) {
+    commit('CHANGE_THEMES', layoutTheme);
+  },
+
+  changeThemesColor({ commit }, { themeColor }) {
+    commit('CHANGE_THEMES_COLOR', themeColor);
   }
 };
 
 export default {
-  namespaced: true, 
+  namespaced: true,
   state,
   mutations,
   actions,

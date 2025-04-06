@@ -58,7 +58,7 @@ const closeModal = () => {
 
                 <div class="text-end">
                     <BButton variant="danger" @click="closeModal">Close</BButton>
-                    <BButton variant="primary" class="ms-1" :class="{ 'opacity-25': form.processing }" :disabled="form.processing" @click="deleteUser">Delete Account</BButton>
+                    <BButton variant="success" class="ms-1" :class="{ 'opacity-25': form.processing }" :disabled="form.processing" @click="deleteUser">Delete Account</BButton>
                 </div>
             </BModal>
         </BCardBody>

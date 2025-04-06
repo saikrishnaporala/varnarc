@@ -41,7 +41,7 @@
         color: var(--#{$prefix}body-color);
 
         &:hover {
-            color: $primary !important;
+            color: var(--#{$prefix}primary) !important;
         }
     }
 

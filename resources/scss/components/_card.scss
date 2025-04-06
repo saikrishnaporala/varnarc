@@ -3,12 +3,12 @@
 // 
 
 .card {
-    margin-bottom: $grid-gutter-width;
-    box-shadow: $card-box-shadow;
+    margin-bottom: var(--#{$prefix}grid-gutter-width);
+    box-shadow: var(--#{$prefix}card-shadow);
 }
 
 .card-header {
-    border-bottom: 1px solid var(--#{$prefix}border-color);
+    border-bottom: var(--#{$prefix}card-header-border-width) solid var(--#{$prefix}border-color);
 }
 
 //Card Header Dropdown
@@ -35,7 +35,7 @@
     transition: all 0.4s;
 
     &:hover{
-        transform: translateY(calc(#{-$grid-gutter-width} / 5));
+        transform: translateY(calc(#{$grid-gutter-width} * -0.15));
         box-shadow: $box-shadow-lg;
     }
 }
@@ -46,7 +46,6 @@
 @each $color,
 $value in $theme-colors {
     .card-#{$color} {
-        background-color: $value;
         color: color-contrast($value);
 
         .card-header, .card-footer {
@@ -61,12 +60,15 @@ $value in $theme-colors {
     }
 }
 
-@each $color,
-$value in $theme-colors {
-    .card-border-#{$color} {
-        border-color: $value !important;
+@each $state in map-keys($theme-colors) { 
+    .card-#{$state} {
+        background-color: var(--#{$prefix}#{$state});
+    }
+
+    .card-border-#{$state} {
+        border-color: var(--#{$prefix}#{$state}) !important;
         .card-header, .card-footer {
-            border-color: $value;
+            border-color: var(--#{$prefix}#{$state});
         }
 
     }
@@ -117,7 +119,7 @@ $value in $theme-colors {
     overflow: hidden;
     &:before {
         content: "";
-        background-color: rgba($primary, 0.20);
+        background-color: rgba(var(--#{$prefix}primary-rgb), 0.20);
         position: absolute;
         top: 0;
         right: 0;

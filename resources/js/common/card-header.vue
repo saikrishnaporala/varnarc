@@ -34,13 +34,13 @@ export default {
 </script>
 
 <template>
-    <b-card-header class="align-items-center d-flex">
-        <b-card-title class="mb-0 flex-grow-1">{{ title }}</b-card-title>
+    <BCardHeader class="align-items-center d-flex">
+        <BCardTitle class="mb-0 flex-grow-1">{{ title }}</BCardTitle>
         <div class="flex-shrink-0">
             <div class="form-check form-switch form-switch-right form-switch-md">
                 <label for="navbarscrollspy-showcode" class="form-label text-muted">Show Code</label>
                 <input class="form-check-input code-switcher" type="checkbox" id="navbarscrollspy-showcode">
             </div>
         </div>
-    </b-card-header>
+    </BCardHeader>
 </template>

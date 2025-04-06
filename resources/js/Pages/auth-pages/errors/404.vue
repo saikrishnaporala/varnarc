@@ -24,7 +24,7 @@ export default {
             <BContainer>
                 <BRow class="justify-content-center">
                     <BCol xl="5">
-                        <BCard no-body class="overflow-hidden">
+                        <BCard no-body class="overflow-hidden card-bg-fill galaxy-border-none">
                             <BCardBody class="p-4">
                                 <div class="text-center">
                                     <lottie colors="primary:#405189,secondary:#0ab39c" :options="defaultOptions"

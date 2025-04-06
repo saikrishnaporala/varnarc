@@ -55,7 +55,7 @@ export default {
 
         <BRow class="justify-content-center">
           <BCol md="8" lg="6" xl="5">
-            <BCard no-body class="mt-4">
+            <BCard no-body class="mt-4 card-bg-fill">
 
               <BCardBody class="p-4">
                 <div class="mb-4">
@@ -68,7 +68,7 @@ export default {
 
                 <div class="p-2 mt-4">
                   <div class="text-muted text-center mb-4 mx-lg-3">
-                    <h4>Verify Your Email</h4>
+                    <h4 class="">Verify Your Email</h4>
                     <p>Please enter the 4 digit code sent to <span class="fw-semibold">example@abc.com</span></p>
                   </div>
 

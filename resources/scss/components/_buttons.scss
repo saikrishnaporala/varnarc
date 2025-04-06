@@ -5,7 +5,6 @@
 button,
 a {
     outline: none !important;
-  
 }
 
 .btn {
@@ -54,6 +53,8 @@ a {
         --#{$prefix}btn-focus-shadow-rgb: var(--#{$prefix}#{$state}-rgb);
         --#{$prefix}btn-active-bg: var(--#{$prefix}#{$state}-text-emphasis);
         --#{$prefix}btn-active-border-color: var(--#{$prefix}#{$state}-text-emphasis);
+        --#{$prefix}btn-disabled-bg: var(--#{$prefix}#{$state});
+        --#{$prefix}btn-disabled-border-color: var(--#{$prefix}#{$state});
     }
 
     .btn-outline-#{$state} {
@@ -114,7 +115,7 @@ a {
 
     &.btn-light {
         .label-icon {
-            background-color: rgba($dark, 0.05);
+            background-color: rgba(var(--#{$prefix}dark-rgb), 0.05);
         }
     }
 
@@ -169,23 +170,17 @@ a {
     }
 }
 
+@each $state in map-keys($theme-colors) {
+    .btn-#{$state} {
+        &.btn-animation {
+            background-color: var(--#{$prefix}#{$state});
+            border-color: var(--#{$prefix}#{$state}) !important;
 
-@mixin button-variant($bg) {
-    &.btn-animation {
-        background-color: $bg;
-        border-color: $bg !important;
-
-        &:is(:hover, :focus, :active, :focus-visible) {
-            color: $bg;
-            background-color: rgba($bg, 0.1);
+            &:is(:hover, :focus, :active, :focus-visible) {
+                color: var(--#{$prefix}#{$state});
+                background-color: rgba(var(--#{$prefix}#{$state}-rgb), 0.1);
+            }
         }
-    }
-}
-
-@each $color,
-$value in $theme-colors {
-    .btn-#{$color} {
-        @include button-variant($value);
     }
 }
 
@@ -207,8 +202,8 @@ $value in $theme-colors {
     .btn-light.active,
     .btn-light.dropdown-toggle.show,
     .btn-light:active {
-        background-color: rgba($info, 0.2);
-        color: $info;
+        background-color: rgba(var(--#{$prefix}info-rgb), 0.2);
+        color: var(--#{$prefix}info);
     }
 }
 
@@ -227,7 +222,7 @@ $value in $theme-colors {
 
     :is(.btn-#{$color}, .btn-outline-#{$color}, .btn-soft-#{$color}) {
         &.btn-border {
-            border-bottom: 2px solid darken($value, 8%);
+            border-bottom: 2px solid color-mix(in srgb, var(--#{$prefix}#{$color}), #2e2929 20%);
         }
     }
 

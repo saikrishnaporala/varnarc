@@ -1,7 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
+import '../scss/app.scss';
+import 'bootstrap/dist/js/bootstrap.bundle'
 import './bootstrap';
-import '../scss/config/saas/app.scss';
 import '@vueform/slider/themes/default.css';
-import '../scss/mermaid.min.css';
+import "leaflet/dist/leaflet.css";
 
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
@@ -25,7 +28,7 @@ AOS.init({
 });
 
 createInertiaApp({
-    title: title => title ? `${title} - Velzon Inertia + Vue & Laravel Admin & Dashboard Template` : 'Velzon - Inertia + Vue & Laravel Admin & Dashboard Template',
+    title: title => title ? `${title} | Velzon Inertia + Vue & Laravel Admin & Dashboard Template` : 'Velzon - Inertia + Vue & Laravel Admin & Dashboard Template',
     resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
     setup({ el, App, props, plugin }) {
         return createApp({ render: () => h(App, props) })

@@ -5,13 +5,14 @@ defineProps({
     policy: String,
 });
 </script>
+
 <script>
 import { CheckCircleIcon } from "@zhuowenli/vue-feather-icons";
 
 export default {
-    components: {
-        CheckCircleIcon
-    },
+  components: {
+    CheckCircleIcon
+  },
 };
 </script>
 

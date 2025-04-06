@@ -11,13 +11,16 @@ export const layoutComputed = {
     sidebarView: (state) => state.sidebarView,
     sidebarColor: (state) => state.sidebarColor,
     sidebarImage: (state) => state.sidebarImage,
-    visibility: (state) => state.visibility
+    visibility: (state) => state.visibility,
+    bodybg: (state) => state.bodybg,
+    layoutTheme: (state) => state.layoutTheme,
+    themeColor: (state) => state.themeColor,
   })
 }
 
-export const layoutMethods = mapActions('layout', 
-['changeLayoutType', 'changeLayoutWidth', 'changeSidebarSize', 'changeTopbar', 'changeMode', 'changePosition', 'changeSidebarView',
- 'changeSidebarColor','changeSidebarImage','changePreloader', 'changeVisibility'])
+export const layoutMethods = mapActions('layout',
+  ['changeLayoutType', 'changeLayoutWidth', 'changeSidebarSize', 'changeTopbar', 'changeMode', 'changePosition', 'changeSidebarView',
+    'changeSidebarColor', 'changeSidebarImage', 'changePreloader', 'changeVisibility', 'changeBodybg', 'changeThemes', 'changeThemesColor'])
 
 export const notificationMethods = mapActions('notification', ['success', 'error', 'clear'])
 

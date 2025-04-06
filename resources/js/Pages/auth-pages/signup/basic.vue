@@ -113,7 +113,7 @@ export default {
 
                 <BRow class="justify-content-center">
                     <BCol md="8" lg="6" xl="5">
-                        <BCard no-body class="mt-4">
+                        <BCard no-body class="mt-4 card-bg-fill">
 
                             <BCardBody class="p-4">
                                 <div class="text-center mt-2">
@@ -142,7 +142,7 @@ export default {
                                             <label class="form-label" for="password-input">Password</label>
                                             <div class="position-relative auth-pass-inputgroup">
                                                 <input type="password" class="form-control pe-5 password-input" onpaste="return false" placeholder="Enter password" id="password-input" aria-describedby="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                                                <BButton variant="link" class="position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></BButton>
+                                                <BButton variant="link" class="position-absolute end-0 top-0 text-decoration-none text-muted password-addon material-shadow-none" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></BButton>
                                                 <div class="invalid-feedback">
                                                     Please enter password
                                                 </div>

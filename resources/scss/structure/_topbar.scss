@@ -38,7 +38,7 @@
 
     .topbar-head-dropdown {
         .dropdown-menu.show {
-            top: 61px !important;
+            top: 13px !important;
         }
 
         .notification-actions {
@@ -59,10 +59,7 @@
         color: var(--#{$prefix}header-item-sub-color);
         transition: all 0.5s ease;
 
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
+        &:hover, &:focus, &:active, &.active {
             background-color: var(--#{$prefix}header-item-bg);
         }
 
@@ -182,9 +179,9 @@
         background-color: var(--#{$prefix}topbar-user-bg);
     }
 
-    // .dropdown-menu {
-    //     top: 6px !important;
-    // }
+    .dropdown-menu {
+        top: 6px !important;
+    }
 }
 
 .notification-item {
@@ -243,7 +240,6 @@
 }
 
 [data-topbar="dark"] {
-
     .logo-dark {
         display: none;
     }
@@ -271,8 +267,7 @@
             position: static;
 
             .dropdown-menu {
-                width: 100% !important;
-                left: 0 !important;
+                width: 100%;
             }
         }
     }

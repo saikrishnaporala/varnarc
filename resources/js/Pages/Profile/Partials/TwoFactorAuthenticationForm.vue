@@ -176,15 +176,15 @@ const disableTwoFactorAuthentication = () => {
 
                 <div v-else>
                     <ConfirmsPassword @confirmed="confirmTwoFactorAuthentication">
-                        <BButton v-if="confirming" variant="primary" type="button" class="me-1" :class="{ 'opacity-25': enabling }" :disabled="enabling">Confirm</BButton>
+                        <BButton v-if="confirming" variant="success" type="button" class="me-1" :class="{ 'opacity-25': enabling }" :disabled="enabling">Confirm</BButton>
                     </ConfirmsPassword>
 
                     <ConfirmsPassword @confirmed="regenerateRecoveryCodes">
-                        <BButton v-if="recoveryCodes.length > 0 && !confirming" variant="primary" type="button" class="me-1">Regenerate Recovery Codes</BButton>
+                        <BButton v-if="recoveryCodes.length > 0 && !confirming" variant="success" type="button" class="me-1">Regenerate Recovery Codes</BButton>
                     </ConfirmsPassword>
 
                     <ConfirmsPassword @confirmed="showRecoveryCodes">
-                        <BButton v-if="recoveryCodes.length === 0 && !confirming" variant="primary" class="me-1" type="button">Show Recovery Codes</BButton>
+                        <BButton v-if="recoveryCodes.length === 0 && !confirming" variant="success" class="me-1" type="button">Show Recovery Codes</BButton>
                     </ConfirmsPassword>
 
                     <ConfirmsPassword @confirmed="disableTwoFactorAuthentication">

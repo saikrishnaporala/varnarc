@@ -113,7 +113,7 @@ export default {
             <BContainer>
                 <BRow>
                     <BCol lg="12">
-                        <BCard no-body class="overflow-hidden m-0">
+                        <BCard no-body class="overflow-hidden m-0 card-bg-fill galaxy-border-none">
                             <BRow class="justify-content-center g-0">
                                 <BCol lg="6">
                                     <div class="p-lg-5 p-4 auth-one-bg h-100">
@@ -130,7 +130,7 @@ export default {
                                                 </div>
 
                                                 <div id="qoutescarouselIndicators" class="carousel slide" data-bs-ride="carousel">
-                                                    <Swiper class=" text-center text-white pb-5" :autoplay="{ delay: 3000, disableOnInteraction: false }" :loop="true" :modules="[Autoplay, Navigation, Pagination]" :pagination="{ clickable: true, el: '.swiper-pagination' }">
+                                                    <Swiper class=" text-center text-white-50 pb-5" :autoplay="{ delay: 3000, disableOnInteraction: false }" :loop="true" :modules="[Autoplay, Navigation, Pagination]" :pagination="{ clickable: true, el: '.swiper-pagination' }">
                                                         <swiper-slide>
                                                             <div class="active">
                                                                 <p class="fs-15 fst-italic">" Great! Clean code, clean
@@ -187,7 +187,7 @@ export default {
                                                     <label class="form-label" for="password-input">Password</label>
                                                     <div class="position-relative auth-pass-inputgroup">
                                                         <input type="password" class="form-control pe-5 password-input" onpaste="return false" placeholder="Enter password" id="password-input" aria-describedby="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                                                        <BButton variant="link" class="position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></BButton>
+                                                        <BButton variant="link" class="position-absolute end-0 top-0 text-decoration-none text-muted password-addon material-shadow-none" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></BButton>
                                                         <div class="invalid-feedback">
                                                             Please enter password
                                                         </div>
@@ -254,7 +254,7 @@ export default {
             </BContainer>
         </div>
 
-        <footer class="footer">
+        <footer class="footer galaxy-border-none">
             <BContainer>
                 <BRow>
                     <BCol lg="12">

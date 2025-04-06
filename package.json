@@ -11,9 +11,9 @@
         "@vue/server-renderer": "^3.4.26",
         "autoprefixer": "^10.4.19",
         "axios": "^1.6.8",
-        "laravel-vite-plugin": "^1.2.0",
+        "laravel-vite-plugin": "^1.0.2",
         "postcss": "^8.4.38",
-        "vite": "^5.4.17",
+        "vite": "^5.2.10",
         "vue": "^3.4.26"
     },
     "dependencies": {
@@ -43,6 +43,7 @@
         "aos": "^2.3.4",
         "bootstrap": "^5.3.3",
         "bootstrap-vue-next": "^0.15.5",
+        "chart.js": "^4.4.2",
         "click-outside-vue3": "^4.0.1",
         "echarts": "^5.5.0",
         "feather-icons": "^4.29.1",

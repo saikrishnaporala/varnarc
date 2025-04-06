@@ -6,7 +6,8 @@
     @dragover.prevent
     @drop.prevent="toggleActive"
     :class="{ 'active-dropzone': active }"
-    class="dropzone position-relative" >
+    class="dropzone position-relative"
+  >
     <div class="mb-1">
         <i class="display-4 text-muted ri-upload-cloud-2-fill"></i>
     </div>

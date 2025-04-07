@@ -3,6 +3,13 @@
 // 
 
 .table {
+
+    .table-light {
+        color: $body-color;
+        border-color: $table-border-color;
+        background-color: var(--#{$variable-prefix}light);
+    }
+
     >thead {
         border-color: $table-border-color;
     }
@@ -42,25 +49,26 @@
     }
 }
 
-@each $state in map-keys($theme-colors) {
-    .border-#{$state} {
+@each $color,
+$value in $theme-colors {
+    .border-#{$color} {
         &.table {
             > thead {
-                border-color: var(--#{$prefix}#{$state}) !important;
+                border-color: $value !important;
             }
         }
     }
-    .table-#{$state} {
+    .table-#{$color} {
         &.table {
             > thead {
-                border-bottom-color: var(--#{$prefix}#{$state}-border-subtle) !important;
+                border-bottom-color:lighten($value, 10%) !important;
             }
         }
     }
 }
 
 .table>:not(caption)>*>* {
-    color: var(--#{$prefix}table-color-state), var(--#{$prefix}table-color-type, var(--#{$prefix}table-color));
+    color: var(--vz-table-color-state), var(--vz-table-color-type, var(--vz-table-color));
 }
 
 .table {
@@ -91,6 +99,16 @@
             font-family: "Material Design Icons";
             font-size: 0.8rem;
             top: 12px;
+        }
+    }
+}
+
+[data-bs-theme="dark"]{
+    .table-light{
+        background-color: var(--#{$variable-prefix}light);
+        color: var(--#{$variable-prefix}body-color);
+        th, td{
+            background-color: var(--#{$variable-prefix}light);
         }
     }
 }

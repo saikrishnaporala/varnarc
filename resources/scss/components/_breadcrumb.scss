@@ -3,11 +3,27 @@
 //
 
 
+// // Breadcrumb item arrow
+// .breadcrumb-item {
+//     > a {
+//         color: var(--#{$prefix}body-color);
+//     }
+//     +.breadcrumb-item {
+//         &::before {
+//             font-family: "Material Design Icons";
+//             font-size: 15px;
+//             line-height: 20px;
+//         }
+//     }
+// }
+
+
 // Breadcrumb item arrow
 .breadcrumb-item {
-    > a {
+    >a {
         color: var(--#{$prefix}body-color);
     }
+
     +.breadcrumb-item {
         &::before {
             font-family: "Material Design Icons";
@@ -15,5 +31,8 @@
             line-height: 20px;
         }
     }
+}
+.breadcrumb{
+    margin: 0;
 }
   

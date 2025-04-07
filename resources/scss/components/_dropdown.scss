@@ -19,9 +19,6 @@
     position: absolute;
     z-index: 1000;
 
-    .dropdown-item{
-        color: var(--#{$prefix}body-color) !important;
-    }
     &.dropdown-megamenu {
         padding: 20px;
         left: 0 !important;
@@ -69,6 +66,7 @@
 
 .dropdown-toggle-split {
     border-left: none;
+
     &::after {
         margin-left: 0px;
     }
@@ -76,7 +74,7 @@
     &:before {
         content: "";
         position: absolute;
-        background-color: rgba($white,0.12);
+        background-color: rgba($white, 0.12);
         top: calc(#{$btn-border-width} * -1);
         bottom: calc(#{$btn-border-width} * -1);
         right: calc(#{$btn-border-width} * -1);
@@ -91,6 +89,31 @@
     position: static !important;
 }
 
+
+.dropdown-tabs {
+    &.nav-tab-custom {
+        border: 0 !important;
+
+        .nav-item {
+            .nav-link {
+                color: #ffffff99;
+                border-width: 0;
+
+                &:hover,
+                &:focus {
+                    color: #fff !important;
+                    border: 0 !important;
+                }
+
+                &:active,
+                &.active {
+                    background-color: var(--#{$prefix}secondary-bg) !important;
+                    color: $primary !important;
+                }
+            }
+        }
+    }
+}
 
 
 // Dropdown size
@@ -112,50 +135,19 @@
         --#{$prefix}position: start;
     }
 }
+
+
+
 // Custom Dropdown with Tabs
-.dropdown-head{
-    .nav-tabs-custom{
-        border: 0;
-        .nav-link  {
-            &::after {
-                display: none;
-            }
-            color: rgba($white, 0.6);
-            &.active {
-                background-color: var(--#{$prefix}dropdown-bg);
-            }
-            &:hover {
-                color: $white;
-            }
-        }
-    }
-}
+
 
 @each $color,
 $value in $theme-colors {
     .dropdownmenu-#{$color} {
-      .dropdown-item{
-        &:is(:focus, :hover, .active){
-          background-color: rgba(($value), 0.07);
-          color: $value;
-        }
-      }
-    }
-}
-
-.dropdown-tabs{
-    &.nav-tab-custom{
-        .nav-item{
-            .nav-link{
-                color:$white !important;
-                &.active{
-                    color: var(--#{$prefix}primary) !important;
-                    background-color: var(--#{$prefix}secondary-bg) !important;
-                }
-
-                &:hover{
-                    border-color:  transparent !important;
-                }
+        .dropdown-item {
+            &:is(:focus, :hover, .active) {
+                background-color: rgba(($value), 0.07);
+                color: $value;
             }
         }
     }

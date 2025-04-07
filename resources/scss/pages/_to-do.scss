@@ -14,7 +14,7 @@
             display: block;
             margin-bottom: 8px;
             &:hover, &.active {
-                color: var(--#{$prefix}success);
+                color: $success;
             }
         }
     }

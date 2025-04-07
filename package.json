@@ -43,7 +43,7 @@
         "aos": "^2.3.4",
         "bootstrap": "^5.3.3",
         "bootstrap-vue-next": "^0.15.5",
-        "chart.js": "^4.4.2",
+        "chart.js": "^3.9.1",
         "click-outside-vue3": "^4.0.1",
         "echarts": "^5.5.0",
         "feather-icons": "^4.29.1",

@@ -140,7 +140,7 @@ export default {
                   </BAlert>
 
                   <h6>Dark Alert</h6>
-                  <BAlert :model-value="true" variant="dark" class="mb-0" class="material-shadow">
+                  <BAlert :model-value="true" variant="dark" class="mb-0 material-shadow">
                     <strong>Did you know?</strong> A simple
                     <b>dark alert</b> —check it out!
                   </BAlert>
@@ -463,7 +463,7 @@ export default {
                   </BAlert>
 
                   <h6>Danger Alert</h6>
-                  <BAlert :model-value="true" variant="danger" class="mb-xl-0" show class="material-shadow">
+                  <BAlert :model-value="true" variant="danger" show class="mb-xl-0 material-shadow">
                     A simple Danger alert with
                     <BLink href="#" class="alert-link"> an example link </BLink>. Give
                     it a click if you like.
@@ -493,7 +493,7 @@ export default {
                   </BAlert>
 
                   <h6>Dark Alert</h6>
-                  <BAlert :model-value="true" variant="dark" class="mb-0" show class="material-shadow">
+                  <BAlert :model-value="true" variant="dark" show class="mb-0 material-shadow">
                     A simple Dark alert with
                     <BLink href="#" class="alert-link"> an example link </BLink>. Give
                     it a click if you like.

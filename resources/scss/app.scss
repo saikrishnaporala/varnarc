@@ -894,7 +894,10 @@ progress {
 
 @media(min-width: 1200px) {
     .container,.container-lg,.container-md,.container-sm,.container-xl {
-        max-width:90%
+        max-width:75%
+    }
+    .navbar.container {
+        max-width: 90%;
     }
 }
 
@@ -17343,11 +17346,13 @@ code {
 }
 
 .card-logo-light {
-    display: var(--vz-card-logo-light)
+    display: var(--vz-card-logo-light);
+    height: 50px;
 }
 
 .card-logo-dark {
-    display: var(--vz-card-logo-dark)
+    display: var(--vz-card-logo-dark);
+    height: 50px;
 }
 
 .border-white {
@@ -18743,7 +18748,10 @@ b,strong {
 
 @media(min-width: 1200px) {
     :is(.container,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl) {
-        max-width:1140px
+        max-width:75%
+    }
+    :is(.navbar.container) {
+        max-width: 90%;
     }
 }
 

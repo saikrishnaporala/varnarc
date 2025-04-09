@@ -286,16 +286,34 @@ export default {
                 <BRow class="justify-content-center">
                     <BCol lg="8">
                         <div class="text-center mb-5">
-                            <h1 class="mb-3 ff-secondary fw-semibold lh-base">A Digital web design studio creating
-                                modern & engaging online</h1>
-                            <p class="text-muted">To achieve this, it would be necessary to have uniform grammar,
-                                pronunciation and more common words. If several languages coalesce the grammar</p>
+                            <h1 class="mb-3 ff-secondary fw-semibold lh-base">Connecting your business with the world</h1>
+                            <p class="text-muted">At Varnarc, we empower businesses with cutting-edge digital solutions. From marketing to financial insights, we help you thrive in the digital landscape.</p>
                         </div>
                     </BCol>
                 </BRow>
 
                 <BRow class="g-3">
-                    <BCol lg="4">
+                    <BCol lg="3">
+                        <div class="d-flex p-3">
+                            <div class="flex-shrink-0 me-3">
+                                <div class="avatar-sm icon-effect">
+                                    <div class="avatar-title bg-transparent text-success rounded-circle">
+                                        <i class="ri-slideshow-line fs-36"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fs-18">Responsive & Clean Design</h5>
+                                <p class="text-muted my-3 ff-secondary">Responsive design is a graphic user interface
+                                    (GUI) design approach used to create content.</p>
+                                <div>
+                                    <BLink to="#" class="fs-13 fw-medium">Learn More <i
+                                            class="ri-arrow-right-s-line align-bottom"></i></BLink>
+                                </div>
+                            </div>
+                        </div>
+                    </BCol>
+                    <BCol lg="3">
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
@@ -305,9 +323,8 @@ export default {
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-18">Creative Design</h5>
-                                <p class="text-muted my-3 ff-secondary">The creative design includes designs that are
-                                    unique, effective and memorable.</p>
+                                <h5 class="fs-18">Digital Advertising</h5>
+                                <p class="text-muted my-3 ff-secondary">Boost brand awareness and drive engagement with Varnarc’s targeted digital ad strategies. We optimize campaigns to maximize your ROI.</p>
                                 <div>
                                     <BLink to="#" class="fs-13 fw-medium">Learn More <i
                                             class="ri-arrow-right-s-line align-bottom"></i></BLink>
@@ -315,7 +332,7 @@ export default {
                             </div>
                         </div>
                     </BCol>
-                    <BCol lg="4">
+                    <BCol lg="3">
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
@@ -325,9 +342,8 @@ export default {
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-18">Unlimited Colors</h5>
-                                <p class="text-muted my-3 ff-secondary">The collection of rules and guidelines which
-                                    designers use to communicate with users through appealing.</p>
+                                <h5 class="fs-18">SEO Audit</h5>
+                                <p class="text-muted my-3 ff-secondary">Enhance your online presence with Varnarc’s in-depth SEO audit. We identify areas for improvement and implement strategies to increase your search rankings.</p>
                                 <div>
                                     <BLink to="#" class="fs-13 fw-medium">Learn More <i
                                             class="ri-arrow-right-s-line align-bottom"></i></BLink>
@@ -335,7 +351,7 @@ export default {
                             </div>
                         </div>
                     </BCol>
-                    <BCol lg="4">
+                    <BCol lg="3">
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
@@ -345,9 +361,8 @@ export default {
                                 </div>
                             </div>
                             <div class="flex-grow-1">
-                                <h5 class="fs-18">Strategy Solutions</h5>
-                                <p class="text-muted my-3 ff-secondary">Business development firm that provides
-                                    strategic planning, market research services and project.</p>
+                                <h5 class="fs-18">Finance Solutions</h5>
+                                <p class="text-muted my-3 ff-secondary">Simplify financial management with Varnarc’s smart digital solutions. From automated invoicing to insightful analytics, we streamline your business operations.</p>
                                 <div>
                                     <BLink to="#" class="fs-13 fw-medium">Learn More <i
                                             class="ri-arrow-right-s-line align-bottom"></i></BLink>
@@ -355,7 +370,7 @@ export default {
                             </div>
                         </div>
                     </BCol>
-                    <BCol lg="4">
+                    <!-- <BCol lg="4">
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
                                 <div class="avatar-sm icon-effect">
@@ -415,27 +430,6 @@ export default {
                             </div>
                         </div>
                     </BCol>
-
-                    <BCol lg="4">
-                        <div class="d-flex p-3">
-                            <div class="flex-shrink-0 me-3">
-                                <div class="avatar-sm icon-effect">
-                                    <div class="avatar-title bg-transparent text-success rounded-circle">
-                                        <i class="ri-slideshow-line fs-36"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="fs-18">Responsive & Clean Design</h5>
-                                <p class="text-muted my-3 ff-secondary">Responsive design is a graphic user interface
-                                    (GUI) design approach used to create content.</p>
-                                <div>
-                                    <BLink to="#" class="fs-13 fw-medium">Learn More <i
-                                            class="ri-arrow-right-s-line align-bottom"></i></BLink>
-                                </div>
-                            </div>
-                        </div>
-                    </BCol>
                     <BCol lg="4">
                         <div class="d-flex p-3">
                             <div class="flex-shrink-0 me-3">
@@ -475,7 +469,7 @@ export default {
                                 </div>
                             </div>
                         </div>
-                    </BCol>
+                    </BCol> -->
                 </BRow>
             </BContainer>
         </section>
@@ -497,10 +491,8 @@ export default {
                                     <i class="ri-collage-line fs-36"></i>
                                 </div>
                             </div>
-                            <h3 class="mb-3 fs-20">Huge collection of widgets</h3>
-                            <p class="mb-4 ff-secondary fs-16">Collection widgets specialize in displaying many elements
-                                of the same type, such as a collection of pictures from a collection of articles from a
-                                news app or a collection of messages from a communication app.</p>
+                            <h3 class="mb-3 fs-20">Marketing that gets great results</h3>
+                            <p class="mb-4 ff-secondary fs-16">At Varnarc, we craft powerful marketing strategies that drive engagement, boost brand awareness, and maximize your ROI. Let’s take your business to the next level!</p>
 
                             <BRow class="pt-3">
                                 <BCol cols="3">

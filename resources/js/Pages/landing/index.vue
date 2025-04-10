@@ -549,10 +549,8 @@ export default {
                     <BCol lg="6" order="2" order-lg="1">
                         <div class="text-muted">
                             <h5 class="fs-12 text-uppercase text-success">Design</h5>
-                            <h4 class="mb-3">Well Designed Dashboards</h4>
-                            <p class="mb-4 ff-secondary">Quality Dashboards (QD) is a condition-specific, actionable
-                                web-based application for quality reporting and population
-                                management that is integrated into the Electronic Health Record (EHR).</p>
+                            <h4 class="mb-3">Well Advanced Dashboards</h4>
+                            <p class="mb-4 ff-secondary">Our advanced dashboard delivers comprehensive SEO audit reports with real-time insights and actionable recommendations. Track performance, fix issues, and boost your search rankings effortlessly.</p>
 
                             <BRow>
                                 <BCol sm="5">
@@ -566,7 +564,7 @@ export default {
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1">
-                                                <h5 class="fs-14 mb-0">Ecommerce</h5>
+                                                <h5 class="fs-14 mb-0">Page Authority</h5>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center">
@@ -578,7 +576,7 @@ export default {
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1">
-                                                <h5 class="fs-14 mb-0">Analytics</h5>
+                                                <h5 class="fs-14 mb-0">Google Backlinks</h5>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center">
@@ -590,7 +588,7 @@ export default {
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1">
-                                                <h5 class="fs-14 mb-0">CRM</h5>
+                                                <h5 class="fs-14 mb-0">Google Indexed</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -606,7 +604,7 @@ export default {
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1">
-                                                <h5 class="fs-14 mb-0">Crypto</h5>
+                                                <h5 class="fs-14 mb-0">External Links</h5>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center">
@@ -618,7 +616,7 @@ export default {
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1">
-                                                <h5 class="fs-14 mb-0">Projects</h5>
+                                                <h5 class="fs-14 mb-0">Score</h5>
                                             </div>
                                         </div>
                                     </div>

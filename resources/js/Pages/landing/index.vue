@@ -113,7 +113,7 @@ export default {
 </script>
 
 <template>
-    <Head title="Landing" />
+    <Head title="Homepage" />
     <div class="layout-wrapper landing">
         <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar">
             <BContainer>
@@ -171,6 +171,26 @@ export default {
                                 <span class="text-success">Varnarc </span>
                             </h1>
                             <p class="lead text-muted lh-base">Unlock your brand’s full potential with our cutting-edge digital solutions. Whether you need a stunning website, a powerful marketing strategy, or seamless user experiences, we help you stand out in a competitive digital world. Elevate your online presence and drive meaningful engagement with strategies designed for success.</p>
+                        </div>
+
+                        <div class="text-center mt-lg-5 pt-5">
+                            <h1 class="display-6 fw-semibold mb-3 lh-base">SEO Audit by
+                                <span class="text-success">Varnarc </span>
+                            </h1>
+                            <BForm action="javascript:void(0);">
+                                <div class="row gy-2 gx-3 mb-3 align-items-center">
+                                    <div class="col-sm-auto">
+                                        <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">@</div>
+                                            <BFormInput type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-auto">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </BForm>
 
                             <div class="d-flex gap-2 justify-content-center mt-4">
                                 <Link href="/auth/signin-basic" class="btn btn-primary">Get Started <i
@@ -191,8 +211,8 @@ export default {
                                 <BCarouselSlide active :img-src="Img1" />
                                 <BCarouselSlide :img-src="Img2" />
                                 <BCarouselSlide :img-src="Img3" />
-                              </BCarousel>
-                           </div>
+                            </BCarousel>
+                        </div>
                     </BCol>
                 </BRow>
             </BContainer>

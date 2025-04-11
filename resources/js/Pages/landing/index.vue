@@ -644,11 +644,9 @@ export default {
                     </BCol>
                     <BCol lg="6">
                         <div class="text-muted ps-lg-5">
-                            <h5 class="fs-12 text-uppercase text-success">structure</h5>
-                            <h4 class="mb-3">Well Documented</h4>
-                            <p class="mb-4">used to describe something that is known about or known to be true because
-                                there are many documents that describe it,
-                                prove it, etc.</p>
+                            <h5 class="fs-12 text-uppercase text-success">social</h5>
+                            <h4 class="mb-3">Well structured data analytics</h4>
+                            <p class="mb-4">We offer advanced dashboards with in-depth Social Media Analytics to track engagement, reach, and performance across platforms. Gain real-time insights to optimize your social media strategy effectively.</p>
 
                             <div class="vstack gap-2">
                                 <div class="d-flex align-items-center">
@@ -660,7 +658,7 @@ export default {
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <p class="mb-0">Dynamic Content</p>
+                                        <p class="mb-0">Google Analytics</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -672,7 +670,7 @@ export default {
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <p class="mb-0">Setup plugin's information.</p>
+                                        <p class="mb-0">Linked In.</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -684,7 +682,7 @@ export default {
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <p class="mb-0">Themes customization information</p>
+                                        <p class="mb-0">Facebook & Instagram</p>
                                     </div>
                                 </div>
                             </div>

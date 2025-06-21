@@ -313,6 +313,7 @@ const resolveIcon = (path: string) => {
                             <div v-if="selectedPlan" class="detail-box fade-in">
                                 <b-card v-if="selectedPlan.id=='seo'" class="text-bg-white">
                                     <div class="right-content-section-column">
+                                        <b-button variant="secondary" @click="resetSelection">Back</b-button>
                                         <h4 class="mb-3">{{ selectedPlan.title }}</h4>
                                         <BRow class="justify-content-center">
                                             <BCol lg="12">
@@ -340,7 +341,8 @@ const resolveIcon = (path: string) => {
                                         <div class="service-item">
                                             <BListGroup tag="ul" class="mb-1">
                                                 <div v-for="(service, index) in webSeoServices" :key="index" class="border-b pb-2">
-                                                    <BListGroupItem tag="li">
+                                                    <BListGroupItem tag="li" class="listcard">
+                                                      <a :href="service.link" target="_blank" rel="noopener">
                                                         <div class="d-flex align-items-center">
                                                             <div class="flex-grow-1">
                                                                 <div class="d-flex">
@@ -352,28 +354,27 @@ const resolveIcon = (path: string) => {
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                      </a>
                                                     </BListGroupItem>
                                                 </div>
                                             </BListGroup>
                                         </div>
-                                        <b-button variant="secondary" @click="resetSelection">Back</b-button>
                                     </div>
                                 </b-card>
                                 <b-card v-if="selectedPlan.id=='digital'" class="text-bg-white">
                                     <div class="right-content-section-column">
+                                      <b-button variant="secondary" @click="resetSelection">Back</b-button>
                                         <h4 class="mb-3">{{ selectedPlan.title }}</h4>
                                         <p>Analyze and optimize your website for better search engine rankings. We offer comprehensive digital marketing services to grow your brand online and drive targeted traffic.</p>
                                         <div class="service-item">
                                             <BListGroup tag="ul" class="mb-1">
                                                 <div v-for="(service, index) in digitalMarketingServices" :key="index" class="border-b pb-2">
-                                                    <BListGroupItem tag="li">
-                                                      <router-link
-                                                        :to="service.link"
-                                                        class="d-flex align-items-center text-reset text-decoration-none px-3 py-2"
-                                                      >
+                                                    <BListGroupItem tag="li" class="listcard">
+                                                      <a :href="service.link" target="_blank" rel="noopener">
                                                         <div class="d-flex align-items-center">
                                                             <div class="flex-grow-1">
                                                                 <div class="d-flex">
+                                                                  <img :src="service.icon" />
                                                                     <i class="mdi mdi-check-bold align-middle lh-1 me-2"></i>
                                                                     <div class="flex-shrink-0 ms-2">
                                                                         <h6 class="fs-md mb-0">{{ service.title }}</h6>
@@ -382,16 +383,17 @@ const resolveIcon = (path: string) => {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                      </router-link>
+                                                      </a>
                                                     </BListGroupItem>
                                                 </div>
                                             </BListGroup>
                                         </div>
-                                        <b-button variant="secondary" @click="resetSelection">Back</b-button>
+                                        
                                     </div>
                                 </b-card>
                                 <b-card v-if="selectedPlan.id=='financial'" class="text-bg-white">
                                     <div class="right-content-section-column">
+                                      <b-button variant="secondary" @click="resetSelection">Back</b-button>
                                         <h4 class="mb-3">{{ selectedPlan.title }}</h4>
                                         <p>We provide end-to-end financial and taxation services designed to support individuals and businesses in maintaining compliance and simplifying financial operations.</p>
                                         <div class="service-item">
@@ -415,7 +417,6 @@ const resolveIcon = (path: string) => {
                                                 </div>
                                             </BListGroup>
                                         </div>
-                                        <b-button variant="secondary" @click="resetSelection">Back</b-button>
                                     </div>
                                 </b-card>
                             </div>

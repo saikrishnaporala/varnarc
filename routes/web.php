@@ -29,6 +29,30 @@ Route::prefix('financial')->group(function () {
     Route::get('/tds-filing', [VelzonRoutesController::class, 'tds_filing']);
 });
 
+Route::prefix('webdev')->group(function () {
+    Route::get('/core-web-vitals', [VelzonRoutesController::class, 'core_web_vitals']);
+    Route::get('/custom-website-development', [VelzonRoutesController::class, 'custom_website_development']);
+    Route::get('/ecommerce-solutions', [VelzonRoutesController::class, 'ecommerce_solutions']);
+    Route::get('/landing-pages-ui-ux', [VelzonRoutesController::class, 'landing_pages_ui_ux']);
+    Route::get('/off-page-seo', [VelzonRoutesController::class, 'off_page_seo']);
+    Route::get('/on-page-seo', [VelzonRoutesController::class, 'on_page_seo']);
+    Route::get('/performance-core-web-vitals', [VelzonRoutesController::class, 'performance_core_web_vitals']);
+    Route::get('/technical-seo-audit', [VelzonRoutesController::class, 'technical_seo_audit']);
+});
+
+Route::prefix('digitalmarketing')->group(function () {
+    Route::get('/AffiliateMarketing', [VelzonRoutesController::class, 'AffiliateMarketing']);
+    Route::get('/WebAnalyticsAndReporting', [VelzonRoutesController::class, 'WebAnalyticsAndReporting']);
+    Route::get('/ContentMarketing', [VelzonRoutesController::class, 'ContentMarketing']);
+    Route::get('/ConversionRateOptimization', [VelzonRoutesController::class, 'ConversionRateOptimization']);
+    Route::get('/EmailMarketing', [VelzonRoutesController::class, 'EmailMarketing']);
+    Route::get('/InfluencerMarketing', [VelzonRoutesController::class, 'InfluencerMarketing']);
+    Route::get('/OnlineReputationManagement', [VelzonRoutesController::class, 'OnlineReputationManagement']);
+    Route::get('/PayPerClickAdvertising', [VelzonRoutesController::class, 'PayPerClickAdvertising']);
+    Route::get('/SEO', [VelzonRoutesController::class, 'SEO']);
+    Route::get('/SocialMediaMarketing', [VelzonRoutesController::class, 'SocialMediaMarketing']);
+});
+
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
     
     Route::controller(VelzonRoutesController::class)->group(function () {

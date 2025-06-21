@@ -21,6 +21,27 @@ class VelzonRoutesController extends Controller
     public function shop_establishment() { return Inertia::render('financial/shop-establishment'); }
     public function tds_filing() { return Inertia::render('financial/tds-filing'); }
 
+    // Web dev Links
+    public function core_web_vitals() { return Inertia::render('webseo/core-web-vitals'); }
+    public function custom_website_development() { return Inertia::render('webseo/custom-website-development'); }
+    public function ecommerce_solutions() { return Inertia::render('webseo/ecommerce-solutions'); }
+    public function landing_pages_ui_ux() { return Inertia::render('webseo/landing-pages-ui-ux'); }
+    public function off_page_seo() { return Inertia::render('webseo/off-page-seo'); }
+    public function on_page_seo() { return Inertia::render('webseo/on-page-seo'); }
+    public function performance_core_web_vitals() { return Inertia::render('webseo/performance-core-web-vitals'); }
+    public function technical_seo_audit() { return Inertia::render('webseo/technical-seo-audit'); }
+
+    public function AffiliateMarketing() { return Inertia::render('digitalmarketing/AffiliateMarketing'); }
+    public function WebAnalyticsAndReporting() { return Inertia::render('digitalmarketing/WebAnalyticsAndReporting'); }
+    public function ContentMarketing() { return Inertia::render('digitalmarketing/ContentMarketing'); }
+    public function ConversionRateOptimization() { return Inertia::render('digitalmarketing/ConversionRateOptimization'); }
+    public function EmailMarketing() { return Inertia::render('digitalmarketing/EmailMarketing'); }
+    public function InfluencerMarketing() { return Inertia::render('digitalmarketing/InfluencerMarketing'); }
+    public function OnlineReputationManagement() { return Inertia::render('digitalmarketing/OnlineReputationManagement'); }
+    public function PayPerClickAdvertising() { return Inertia::render('digitalmarketing/PayPerClickAdvertising'); }
+    public function SEO() { return Inertia::render('digitalmarketing/SEO'); }
+    public function SocialMediaMarketing() { return Inertia::render('digitalmarketing/SocialMediaMarketing'); }
+
     public function seo_report($domain) {
         return Inertia::render('seo-report/index', [
             'domain' => $domain,

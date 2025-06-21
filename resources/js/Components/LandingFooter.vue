@@ -80,7 +80,7 @@ onUnmounted(() => {
                 <div class="text-muted mt-3">
                   <ul class="list-unstyled ff-secondary footer-list">
                     <li>
-                      <Link href="/pages/profile">About US</Link>
+                      <Link href="/aboutus">About US</Link>
                     </li>
                     <li>
                       <BLink href="#">Gallery</BLink>

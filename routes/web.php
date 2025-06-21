@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/home', [VelzonRoutesController::class, 'landing'])->name('home');
+Route::controller(VelzonRoutesController::class)->group(function () {
+    Route::get('/aboutus', 'aboutus');
+    Route::get("/pages/privacy-policy", "pages_privacy_policy"); 
+    Route::get("/pages/term-conditions", "pages_term_conditions"); 
+});
 
 Route::prefix('financial')->group(function () {
     Route::get('/accounting-services', [VelzonRoutesController::class, 'accounting_services']);
@@ -227,8 +232,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
         Route::get("/pages/team", "pages_team"); 
         Route::get("/pages/search-results", "pages_search_results"); 
         Route::get("/pages/sitemap", "pages_sitemap"); 
-        Route::get("/pages/privacy-policy", "pages_privacy_policy"); 
-        Route::get("/pages/term-conditions", "pages_term_conditions"); 
 
         // charts routes
         Route::get("/charts/chartjs", "charts_chartjs"); 

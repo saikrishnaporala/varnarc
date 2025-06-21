@@ -8,6 +8,7 @@ use Inertia\Inertia;
 class VelzonRoutesController extends Controller
 {
     public function landing() { return Inertia::render('landing/index'); }
+    public function aboutus() { return Inertia::render('AboutUs'); }
 
     // Financial Links
     public function accounting_services() { return Inertia::render('financial/accounting-services'); }

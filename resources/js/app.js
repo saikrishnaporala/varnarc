@@ -29,7 +29,7 @@ AOS.init({
 });
 
 createInertiaApp({
-    title: title => title ? `${title} | Velzon Inertia + Vue & Laravel Admin & Dashboard Template` : 'Velzon - Inertia + Vue & Laravel Admin & Dashboard Template',
+    title: title => title ? `${title} | Varnarc – Web Development, SEO, Digital Marketing & Financial Services in India` : 'Varnarc – Web Development, SEO, Digital Marketing & Financial Services in India',
     resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
     setup({ el, App, props, plugin }) {
         return createApp({ render: () => h(App, props) })

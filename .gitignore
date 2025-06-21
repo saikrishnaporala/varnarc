@@ -1,6 +1,5 @@
 
 node_modules
-.env
 # Allow Vite build output
 !public/build
 !public/build/**

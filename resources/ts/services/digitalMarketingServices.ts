@@ -1,5 +1,5 @@
 // services-data/digitalMarketingServices.ts
-import AffiliateMarketing from '@assets/images/digitalmarketing/AffiliateMarketing.png'
+import affiliatemarketing from '@assets/images/digitalmarketing/affiliatemarketing.png'
 import WebAnalyticsAndReporting from '@assets/images/digitalmarketing/WebAnalyticsAndReporting.png'
 import ContentMarketing from '@assets/images/digitalmarketing/ContentMarketing.png'
 import ConversionRateOptimization from '@assets/images/digitalmarketing/ConversionRateOptimization.png'
@@ -15,7 +15,7 @@ export const digitalMarketingServices = [
       title: "Affiliate Marketing",
       description: "Grow your sales with performance-based affiliate partnerships.",
       link: "/digitalmarketing/AffiliateMarketing",
-      icon: AffiliateMarketing
+      icon: affiliatemarketing
     },
     {
       title: "Web Analytics and Reporting",

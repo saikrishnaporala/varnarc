@@ -5,7 +5,7 @@ defineProps<{}>();
 
 <template>
   <section class="service-section">
-    <img src="@assets/images/digitalmarketing/AffiliateMarketing.png" alt="Affiliate Marketing Icon" class="icon" />
+    <img src="@assets/images/digitalmarketing/affiliatemarketing.png" alt="Affiliate Marketing Icon" class="icon" />
     <h2>Affiliate Marketing</h2>
     <p>Grow your sales with performance-based affiliate partnerships.</p>
     <ul>

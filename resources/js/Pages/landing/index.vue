@@ -28,6 +28,8 @@ import "swiper/css/effect-creative";
 import "swiper/css/effect-flip";
 import "swiper/css/effect-coverflow";
 
+import AffiliateIcon from '@assets/images/affiliatemarketing.png'
+
 // Web page Data
 import { servicesList } from "@assets/ts/services/servicesList";
 import { webSeoServices } from "@assets/ts/services/webSeoServices";
@@ -283,6 +285,7 @@ const resolveIcon = (path: string) => {
                 </BCol>
             </BRow>
             <BContainer>
+               <img :src="AffiliateIcon" />
                 <div class="plans-container">
                     <div class="plans-wrapper">
                         <div class="container1 mt-5">
@@ -374,7 +377,7 @@ const resolveIcon = (path: string) => {
                                                         <div class="d-flex align-items-center">
                                                             <div class="flex-grow-1">
                                                                 <div class="d-flex">
-                                                                  <img :src="service.icon" />
+                                                                  <img :src="AffiliateIcon" />
                                                                     <i class="mdi mdi-check-bold align-middle lh-1 me-2"></i>
                                                                     <div class="flex-shrink-0 ms-2">
                                                                         <h6 class="fs-md mb-0">{{ service.title }}</h6>

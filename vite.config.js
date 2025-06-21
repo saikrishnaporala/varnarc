@@ -26,8 +26,8 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            '@assets': '/resources/', // Update this with the correct path to your images
-            '@favicon': '/resources/images/', // Update this with the correct path to your images
+            '@assets': '/resources/',
+            '@favicon': '/resources/images/',
         },
     },
 });

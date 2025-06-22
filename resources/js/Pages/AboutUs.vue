@@ -2,10 +2,6 @@
 import { Head } from "@inertiajs/vue3";
 import LandingNavbar from "@assets/js/Components/LandingNavbar.vue";
 import LandingFooter from "@assets/js/Components/LandingFooter.vue";
-import PayrollOfferings from "@assets/ts/services/PayrollOfferings";
-defineProps({
-    policy: String,
-});
 </script>
 
 <script>

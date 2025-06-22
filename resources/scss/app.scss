@@ -85824,4 +85824,25 @@ th.gridjs-th:last-child {
     background-color: #ffffff;
     color: #1f2937;
     margin-top: 30px;
-  }
+}
+
+.about-choose li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: #6c757d;
+    font-family: var(--your-secondary-font, sans-serif);
+    justify-content: center;
+}
+
+.webdev-seo-choose li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: #6c757d;
+    font-family: var(--your-secondary-font, sans-serif);
+    list-style-type: none;
+}

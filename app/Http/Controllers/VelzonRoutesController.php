@@ -10,6 +10,8 @@ class VelzonRoutesController extends Controller
     public function landing() { return Inertia::render('landing/index'); }
     public function aboutus() { return Inertia::render('AboutUs'); }
 
+    public function webdevelopment_seo() { return Inertia::render('webseo/webdevelopment-seo'); }
+
     // Financial Links
     public function accounting_services() { return Inertia::render('financial/accounting-services'); }
     public function company_incorporation() { return Inertia::render('financial/company-incorporation'); }

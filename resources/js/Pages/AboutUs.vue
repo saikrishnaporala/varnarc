@@ -1,6 +1,6 @@
 <script type="ts" setup>
 import { Head } from "@inertiajs/vue3";
-import LandingNavbar from "@assets/js/Components/LandingNavbar.vue";
+import NavbarDefault from "@assets/js/Components/NavbarDefault.vue";
 import LandingFooter from "@assets/js/Components/LandingFooter.vue";
 </script>
 
@@ -17,7 +17,7 @@ export default {
 <template>
     <Head title="About Us" />
     <div class="layout-wrapper landing">
-        <LandingNavbar />
+        <NavbarDefault />
         <section class="section pb-0 hero-section" id="hero">
             <BRow class="justify-content-center">
                 <BCol col lg="10">
@@ -72,7 +72,7 @@ export default {
                                         <div class="row justify-content-center mt-5">
                                             <div class="col-lg-5">
                                                 <div class="text-center mb-4 pb-2">
-                                                    <h4 class="fw-semibold fs-22"> 🚀 Our Mission </h4>
+                                                    <h4 class="fw-semibold fs-22 mb-5"> 🚀 Our Mission </h4>
                                                     <p class="mb-4 fs-15">To empower businesses with reliable, innovative, and scalable digital and financial services that fuel long-term success and compliance.</p>
                                                 </div>
                                             </div>
@@ -80,7 +80,7 @@ export default {
                                         <div class="row justify-content-center mt-5">
                                             <div class="col-lg-5">
                                                 <div class="text-center mb-4 pb-2">
-                                                    <h4 class="fw-semibold fs-22"> 🌐 What We Do </h4>
+                                                    <h4 class="fw-semibold fs-22 mb-5"> 🌐 What We Do </h4>
                                                     <p class="mb-4 fs-15">We understand that every business is unique. That’s why we offer a diverse range of services designed to support your journey from launch to scale:</p>
                                                 </div>
                                             </div>
@@ -103,7 +103,7 @@ export default {
                                                                 Crafting responsive, fast, and user-friendly websites tailored to your goals—whether you need a corporate site, eCommerce platform, or a custom web app.
                                                             </div>
                                                             <div class="mt-4">
-                                                                <a class="btn btn-soft-success w-100 waves-effect waves-light" href="javascript:void(0);">Get started</a>
+                                                                <a class="btn btn-soft-primary w-100 waves-effect waves-light" href="/webdevelopment-seo">Get started</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -128,7 +128,7 @@ export default {
                                                                 We drive real results through data-backed <b>SEO, Google Ads, social media campaigns,</b> and <b>performance marketing</b>. Our strategies are built to boost visibility, leads, and conversions.
                                                             </div>
                                                             <div class="mt-4">
-                                                                <a class="btn btn-soft-success w-100 waves-effect waves-light" href="javascript:void(0);">Get started</a>
+                                                                <a class="btn btn-soft-primary w-100 waves-effect waves-light" href="javascript:void(0);">Get started</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -153,7 +153,7 @@ export default {
                                                                 From <b>GST filing</b> and <b>accounting</b> to <b>payroll, TDS</b>, and <b>business registration</b>, we ensure your business stays compliant and financially healthy.
                                                             </div>
                                                             <div class="mt-4">
-                                                                <a class="btn btn-soft-success w-100 waves-effect waves-light" href="javascript:void(0);" >Get started</a>
+                                                                <a class="btn btn-soft-primary w-100 waves-effect waves-light" href="javascript:void(0);" >Get started</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -163,8 +163,8 @@ export default {
                                         <div class="row justify-content-center mt-5">
                                             <div class="col-lg-5">
                                                 <div class="text-center mb-4 pb-2">
-                                                    <h4 class="fw-semibold fs-22"> 💼 Why Choose Varnarc? </h4>
-                                                    <ul class="plan-feature-list">
+                                                    <h4 class="fw-semibold fs-22 mb-5"> 💼 Why Choose Varnarc? </h4>
+                                                    <ul class="about-choose justify-content-center">
                                                         <li><i class="ri-checkbox-circle-fill text-primary me-2"></i>Experienced professionals across tech, marketing, and finance</li>
                                                         <li><i class="ri-checkbox-circle-fill text-primary me-2"></i>Transparent pricing with no hidden charges </li>
                                                         <li><i class="ri-checkbox-circle-fill text-primary me-2"></i>Personalized support and strategy for every client</li>
@@ -177,7 +177,7 @@ export default {
                                         <div class="row justify-content-center mt-5">
                                             <div class="col-lg-5">
                                                 <div class="text-center mb-4 pb-2">
-                                                    <h4 class="fw-semibold fs-22"> 🤝 Our Clients </h4>
+                                                    <h4 class="fw-semibold fs-22 mb-5"> 🤝 Our Clients </h4>
                                                     <p class="mb-4 fs-15">We work with a wide range of
                                                         industries—from startups and local businesses to corporates and
                                                         eCommerce brands—helping them streamline operations and scale
@@ -191,7 +191,7 @@ export default {
                                 <div class="row justify-content-center mt-5">
                                     <div class="col-lg-5">
                                         <div class="text-center mb-4 pb-2">
-                                            <h4 class="fw-semibold fs-22"> Let's Grow Together </h4>
+                                            <h4 class="fw-semibold fs-22 mb-5"> Let's Grow Together </h4>
                                             <p class="mb-4 fs-15">At Varnarc, your growth is our
                                                 mission. Whether you’re building your online presence or
                                                 managing financial compliance, we’re here to simplify the

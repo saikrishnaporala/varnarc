@@ -19,6 +19,8 @@ Route::controller(VelzonRoutesController::class)->group(function () {
     Route::get('/aboutus', 'aboutus');
     Route::get("/pages/privacy-policy", "pages_privacy_policy"); 
     Route::get("/pages/term-conditions", "pages_term_conditions"); 
+
+    Route::get('/webdevelopment-seo', 'webdevelopment_seo');
 });
 
 Route::prefix('financial')->group(function () {

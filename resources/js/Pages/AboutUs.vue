@@ -164,11 +164,13 @@ export default {
                                             <div class="col-lg-5">
                                                 <div class="text-center mb-4 pb-2">
                                                     <h4 class="fw-semibold fs-22"> 💼 Why Choose Varnarc? </h4>
-                                                    ✔️ Experienced professionals across tech, marketing, and finance 
-                                                    ✔️ Transparent pricing with no hidden charges 
-                                                    ✔️ Personalized support and strategy for every client 
-                                                    ✔️ Complete digital & compliance solutions in one place 
-                                                    ✔️ Serving clients across India and globally
+                                                    <ul class="plan-feature-list">
+                                                        <li><i class="ri-checkbox-circle-fill text-primary me-2"></i>Experienced professionals across tech, marketing, and finance</li>
+                                                        <li><i class="ri-checkbox-circle-fill text-primary me-2"></i>Transparent pricing with no hidden charges </li>
+                                                        <li><i class="ri-checkbox-circle-fill text-primary me-2"></i>Personalized support and strategy for every client</li>
+                                                        <li><i class="ri-checkbox-circle-fill text-primary me-2"></i>Complete digital & compliance solutions in one place</li>
+                                                        <li><i class="ri-checkbox-circle-fill text-primary me-2"></i>Serving clients across India and globally</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
